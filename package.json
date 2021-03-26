@@ -1,0 +1,14 @@
+{
+    "name": "check-pest-availability",
+    "version": "0.0.1",
+    "scripts": {
+        "local": "npx functions-framework --port=8081 --target=fulfillment"
+    },
+    "dependencies": {
+        "request": "^2.88.0",
+        "request-promise": "^4.2.4"
+    },
+    "devDependencies": {
+        "@google-cloud/functions-framework": "^1.7.1"
+    }
+}
