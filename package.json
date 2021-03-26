@@ -2,7 +2,7 @@
     "name": "check-pest-availability",
     "version": "0.0.1",
     "scripts": {
-        "local": "npx functions-framework --port=8081 --target=fulfillment"
+        "local": "npx functions-framework --port=8081 --target=hello"
     },
     "dependencies": {
         "request": "^2.88.0",
