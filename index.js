@@ -3,8 +3,15 @@ const displayCounter = (req, res) => {
     if (method === 'GET') {
         const data = req.body;
         console.log(data);
+        res.send({
+            message: 'This is google function with camelCase:) ',
+            method: method,
+        });
     }
-    res.send('hello');
+    res.send({
+        request: req.body,
+        method: method,
+    });
 };
 
 exports.displayCounter = displayCounter;
