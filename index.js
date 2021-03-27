@@ -1,10 +1,10 @@
-const hello = (req, res) => {
+const displayCounter = (req, res) => {
     const method = req.method;
-    if (method === 'POST') {
+    if (method === 'GET') {
         const data = req.body;
         console.log(data);
     }
     res.send('hello');
 };
 
-exports.hello = hello;
+exports.displayCounter = displayCounter;
