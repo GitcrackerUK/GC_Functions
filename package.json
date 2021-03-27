@@ -2,13 +2,15 @@
     "name": "check-pest-availability",
     "version": "0.0.1",
     "scripts": {
-        "local": "npx functions-framework --port=8081 --target=hello"
+        "local": "npx functions-framework --port=8081 --target=hello",
+        "live": "nodemon functions"
     },
     "dependencies": {
         "request": "^2.88.0",
         "request-promise": "^4.2.4"
     },
     "devDependencies": {
-        "@google-cloud/functions-framework": "^1.7.1"
+        "@google-cloud/functions-framework": "^1.7.1",
+        "nodemon": "^2.0.7"
     }
 }
