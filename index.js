@@ -1,7 +1,8 @@
 const hello = (req, res) => {
     const method = req.method;
     if (method === 'POST') {
-        console.log(req.body);
+        const data = req.body;
+        console.log(data);
     }
     res.send('hello');
 };
